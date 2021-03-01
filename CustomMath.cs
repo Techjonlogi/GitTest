@@ -15,7 +15,7 @@ namespace SimpleMath
             int valor2 = Console.Read();
 
 
-            resultado = valor1 - valor2;
+            resultado = valor1-valor2;
 
 
 
