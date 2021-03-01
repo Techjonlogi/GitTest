@@ -22,7 +22,15 @@ namespace SimpleMath
 
                 if(option.Trim() == "1")
                 {
+                    Console.WriteLine("\nIngresa el primero numero: ");
+                    float numero1 = float.Parse(Console.ReadLine());
 
+                    Console.WriteLine("\nIngresa el segundo numero: ");
+                    float numero2 = float.Parse(Console.ReadLine());
+
+                    float resultadoSuma = CustomMath.Sumar(numero1, numero2);
+
+                    Console.WriteLine($"\nEl resultado de la suma es: {resultadoSuma}\n");
                 }
                 else if(option.Trim() == "2")
                 {
