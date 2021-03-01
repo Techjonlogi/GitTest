@@ -46,7 +46,14 @@ namespace SimpleMath
                 }
                 else if(option.Trim() == "7")
                 {
+                    Console.WriteLine("Ingresa el numero base");
+                    int numeroBase = int.Parse(Console.ReadLine());
+                    
+                    Console.WriteLine("Ingresa la potencia que le deseas aplicar");
+                    int potencia = int.Parse(Console.ReadLine());
 
+                    Console.WriteLine("El resultado de la operación es: " + CustomMath.Potencia(numeroBase, potencia));
+                    
                 }
                 else if(option.Trim() == "8")
                 {
