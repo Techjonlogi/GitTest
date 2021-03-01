@@ -67,6 +67,10 @@ namespace SimpleMath
                 {
 
                 }
+                else if(option.Trim() == "9")
+                {
+                    Console.WriteLine(CustomMath.Echo());
+                }
                 else 
                     break;
             }
