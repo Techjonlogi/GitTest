@@ -23,8 +23,7 @@ namespace SimpleMath
 
                 if (option.Trim() == "1")
                 {
-                    
-                    
+                                        
                 }
                 else if (option.Trim() == "2")
                 {
