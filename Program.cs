@@ -1,5 +1,4 @@
-﻿using System;
-
+using System;
 
 namespace SimpleMath
 {
@@ -23,7 +22,15 @@ namespace SimpleMath
 
                 if (option.Trim() == "1")
                 {
-                                        
+                    Console.WriteLine("\nIngresa el primero numero: ");
+                    float numero1 = float.Parse(Console.ReadLine());
+
+                    Console.WriteLine("\nIngresa el segundo numero: ");
+                    float numero2 = float.Parse(Console.ReadLine());
+
+                    float resultadoSuma = CustomMath.Sumar(numero1, numero2);
+
+                    Console.WriteLine($"\nEl resultado de la suma es: {resultadoSuma}\n");
                 }
                 else if (option.Trim() == "2")
                 {
@@ -48,11 +55,22 @@ namespace SimpleMath
                 }
                 else if (option.Trim() == "7")
                 {
+                    Console.WriteLine("Ingresa el numero base");
+                    int numeroBase = int.Parse(Console.ReadLine());
+                    
+                    Console.WriteLine("Ingresa la potencia que le deseas aplicar");
+                    int potencia = int.Parse(Console.ReadLine());
 
+                    Console.WriteLine("El resultado de la operación es: " + CustomMath.Potencia(numeroBase, potencia));
+                    
                 }
                 else if (option.Trim() == "8")
                 {
 
+                }
+                else if(option.Trim() == "9")
+                {
+                    Console.WriteLine(CustomMath.Echo());
                 }
                 else
                     break;
