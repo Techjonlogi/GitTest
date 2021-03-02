@@ -4,7 +4,7 @@ namespace SimpleMath
 {
     public static class CustomMath
     {
-
+ 
         public static double Resta()
         {
             double resultado;
